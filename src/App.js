@@ -1,4 +1,15 @@
 import React, { useState } from "react";
+import React from "react";
+import ReactDOM from "react-dom";
+import { HashRouter } from "react-router-dom";
+import App from "./App";
+
+ReactDOM.render(
+  <HashRouter>
+    <App />
+  </HashRouter>,
+  document.getElementById("root")
+);
 
 function App() {
     const [count, setCount] = useState(0);
